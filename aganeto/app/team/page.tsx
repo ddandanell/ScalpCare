@@ -18,10 +18,10 @@ const teamStructure = [
     skills: ["React/Next.js", "Node.js", "Python", "AWS", "Docker"]
   },
   {
-    category: "Project Managers", 
+    category: "Senior Project Managers", 
     count: 8,
-    description: "Agile-certified project managers ensuring smooth delivery and communication",
-    skills: ["Scrum Master", "Agile Methodologies", "Jira", "Confluence", "Client Relations"]
+    description: "Agile-certified project managers with 6+ years experience ensuring smooth delivery and communication",
+    skills: ["Scrum Master", "Agile Methodologies", "Jira", "Confluence", "Client Relations", "Team Leadership"]
   },
   {
     category: "Sales & Marketing Team",
@@ -52,27 +52,27 @@ const teamStructure = [
 const leadership = [
   {
     name: "David Dandanell",
-    role: "Project Manager & Co-Founder",
+    role: "Project Manager",
     location: "Bali, Indonesia",
     experience: "22+ years",
-    expertise: "Project Management, MVP Development, Team Onboarding, Strategic Planning",
-    description: "David has been working with projects for over 22 years across Singapore, Denmark, and Indonesia, leading diverse teams and managing complex international initiatives. He has extensive experience in onboarding teams, finding value in MVPs, and strategic project management across multiple industries and markets. With his deep understanding of both European and Asian business cultures, David ensures seamless communication and delivery excellence. He's been living in Indonesia for 6 years now, based in Bali, and brings a unique perspective to every project, ensuring they meet the highest standards while maintaining clear communication, transparency, and cultural sensitivity throughout the development process."
+    expertise: "Project Management, MVP Development, Team Leadership, Strategic Planning, International Project Coordination",
+    description: "David is originally from Denmark and has been working as a Project Manager for over 22 years across Singapore, Denmark, and Indonesia, leading diverse teams and managing complex international initiatives. He has extensive experience in project management methodologies, team onboarding, finding value in MVPs, and strategic project planning across multiple industries and markets. With his deep understanding of both European and Asian business cultures, David ensures seamless communication and delivery excellence. He's been living in Indonesia for 6 years now, based in Bali, and brings a unique perspective to every project, ensuring they meet the highest standards while maintaining clear communication, transparency, and cultural sensitivity throughout the development process. His project management expertise spans from small startups to large enterprise solutions."
   },
   {
     name: "Michael Kirana",
-    role: "CEO & Co-Founder",
-    location: "Denmark", 
+    role: "Project Manager",
+    location: "Jakarta, Indonesia", 
     experience: "25+ years",
-    expertise: "Account Management, Business Strategy, Financial Planning, Market Analysis, Client Relations",
-    description: "Michael has been living in Indonesia for 25 years and is a super expert at handling teams and business operations across diverse cultural and economic landscapes. As CEO, he oversees comprehensive business strategy, account management, financial planning, and ensures our company's sustainable growth and client satisfaction across all markets and industries. With his deep understanding of both European business practices and Indonesian market dynamics, Michael has successfully built and scaled multiple ventures, establishing strong partnerships and driving innovation in the technology sector. His leadership combines strategic vision with operational excellence, ensuring every client relationship is nurtured and every business opportunity is maximized for long-term success and mutual benefit."
+    expertise: "Project Management, Business Strategy, Team Leadership, Client Relations, Cross-Cultural Project Coordination",
+    description: "Michael is originally from Denmark and has been living in Indonesia for 25 years, working as a Project Manager with extensive expertise in handling teams and business operations across diverse cultural and economic landscapes. He has managed hundreds of projects throughout his career, overseeing comprehensive project strategies, team coordination, and ensuring client satisfaction across all markets and industries. With his deep understanding of both European business practices and Indonesian market dynamics, Michael has successfully built and scaled multiple ventures, establishing strong partnerships and driving innovation in the technology sector. His project management approach combines strategic vision with operational excellence, ensuring every project is delivered on time, within budget, and exceeds client expectations. He specializes in managing complex international projects and cross-cultural team coordination."
   },
   {
     name: "Muhammad Mulkhaq",
-    role: "Head of Supervision & Control",
+    role: "Project Manager",
     location: "Jakarta, Indonesia",
     experience: "15+ years", 
-    expertise: "Data Architecture, Full-Stack Development, Project Supervision, Talent Mentorship",
-    description: "Muhammad has been working in technology and development for over 15 years, leading large-scale projects across Asia and beyond. With a Ph.D. in Data Architecture & Database Systems, he combines academic depth with hands-on coding expertise. He has received awards and MVP recognition for his ability to design robust system structures and guide technical execution at scale. Muhammad also collaborates with universities, teaching and mentoring future developers while helping identify the best talent to join our teams. Based in Indonesia, he ensures every major build is delivered with precision, stability, and vision."
+    expertise: "Project Management, Technical Project Leadership, Data Architecture, Team Mentorship, Large-Scale Project Coordination",
+    description: "Muhammad is from Indonesia and has been working as a Project Manager in technology and development for over 15 years, leading large-scale projects across Asia and beyond. With a Ph.D. in Data Architecture & Database Systems, he combines academic depth with hands-on project management expertise. He has received awards and recognition for his ability to manage complex technical projects and guide teams through challenging development processes. Muhammad also collaborates with universities, teaching project management methodologies and mentoring future project managers while helping identify the best talent to join our teams. Based in Indonesia, he ensures every major project is delivered with precision, stability, and vision, specializing in technical project management and team leadership."
   }
 ];
 
@@ -120,7 +120,7 @@ export default function TeamPage() {
               
               {/* Aspirational subheadline */}
               <p className="text-xl sm:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
-                Meet the 45 brilliant minds who turn your boldest visions into reality, led by European excellence and powered by Indonesian innovation.
+                Meet the 45 brilliant minds who turn your boldest visions into reality, led by experienced Project Managers from Denmark and Indonesia.
               </p>
               
               {/* Premium benefit + proof statements */}
@@ -140,7 +140,7 @@ export default function TeamPage() {
                     <span className="text-2xl">🏆</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-2 text-lg">European Leadership</h3>
+                    <h3 className="font-bold text-foreground mb-2 text-lg">Project Management Excellence</h3>
                     <p className="text-muted-foreground">Perfect communication & quality control • 25 years experience</p>
                   </div>
                 </div>
@@ -238,7 +238,7 @@ export default function TeamPage() {
               </h2>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
                 45 world-class specialists across 6 departments, delivering enterprise-grade solutions at startup prices. 
-                <span className="font-semibold text-foreground"> European leadership meets Indonesian innovation.</span>
+                <span className="font-semibold text-foreground"> Led by experienced Project Managers from Denmark and Indonesia.</span>
               </p>
             </div>
             
@@ -326,7 +326,7 @@ export default function TeamPage() {
                 </div>
                 <div className="flex items-center gap-3 px-6 py-3 rounded-full bg-white/60 backdrop-blur-sm border border-white/40">
                   <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse" />
-                  <span className="font-medium text-foreground">European Project Management</span>
+                  <span className="font-medium text-foreground">Expert Project Management</span>
                 </div>
               </div>
             </div>
@@ -335,7 +335,7 @@ export default function TeamPage() {
 
         {/* Leadership Team */}
         <div className="mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">European Leadership Team</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Project Management Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {leadership.map((leader, index) => (
               <Card key={index} className="p-6">
@@ -561,7 +561,7 @@ export default function TeamPage() {
               Ready to Work with Our Team?
             </h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Get direct access to our talented team and experience the perfect blend of Indonesian talent and European leadership
+              Get direct access to our talented team and experience the perfect blend of Indonesian talent and expert Project Management
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" className="min-h-[44px]">
