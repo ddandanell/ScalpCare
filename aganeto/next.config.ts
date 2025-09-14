@@ -1,8 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'standalone',
-  serverExternalPackages: [],
   images: {
     remotePatterns: [
       {
@@ -12,6 +10,15 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
+  },
+  trailingSlash: false,
+  async rewrites() {
+    return [
+      {
+        source: '/:path*',
+        destination: '/:path*',
+      },
+    ];
   },
 };
 
