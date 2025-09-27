@@ -1,0 +1,301 @@
+# ScalpCare Expert Visual Identity & Styling Guide
+
+## Color Palette
+
+**Primary Palette:**
+```css
+/* Main Colors */
+--primary-green: #2C5530      /* Deep forest green - trustworthiness */
+--secondary-sage: #7A8B7D     /* Sage green - balance */
+--accent-cream: #F7F5F0       /* Warm cream - softness */
+--pure-white: #FFFFFF         /* Pure white - cleanliness */
+```
+
+**Supporting Palette:**
+```css
+/* Neutral tones */
+--charcoal-gray: #3A3A3A      /* Dark gray - text */
+--light-gray: #E8E8E8         /* Light gray - borders */
+--warm-beige: #F2F0ED         /* Warm beige - backgrounds */
+--soft-green: #A8B5A8         /* Soft green - accents */
+```
+
+**Accent Colors:**
+```css
+/* Call-to-action and highlights */
+--golden-accent: #D4A574      /* Gold accent - premium */
+--trust-blue: #4A6B73         /* Trust blue - secondary CTA */
+--success-green: #6B8E6B      /* Success green - positive elements */
+```
+
+## Typography Hierarchy
+
+**Primary Font Family:**
+```css
+/* Headlines & Branding */
+font-family: 'Inter', 'Helvetica Neue', sans-serif;
+/* Modern, readable, Scandinavian feel */
+
+/* Body Text */
+font-family: 'Source Sans Pro', 'Arial', sans-serif;
+/* Optimal readability, medical precision */
+```
+
+**Typographic Scale:**
+```css
+/* H1 - Hero Headlines */
+font-size: 3.5rem;    /* 56px */
+font-weight: 700;
+line-height: 1.1;
+letter-spacing: -0.02em;
+
+/* H2 - Section Headers */
+font-size: 2.5rem;    /* 40px */
+font-weight: 600;
+line-height: 1.2;
+
+/* H3 - Subsection Headers */
+font-size: 1.75rem;   /* 28px */
+font-weight: 600;
+line-height: 1.3;
+
+/* Body Text */
+font-size: 1.125rem;  /* 18px */
+font-weight: 400;
+line-height: 1.6;
+
+/* Small Text */
+font-size: 0.875rem;  /* 14px */
+font-weight: 400;
+line-height: 1.5;
+```
+
+## Design Principles
+
+**1. Scandinavian Minimalism**
+- White space is our most important design element
+- Functionality before decoration
+- Clean lines and geometric shapes
+- Subtle shadows and minimal depth
+
+**2. Natural Trustworthiness**
+- Organic forms inspired by leaves and growth
+- Textures reminiscent of natural materials
+- Authentic photography over stock images
+- Earthy colors that feel calming
+
+**3. Medical Precision**
+- Grid-based layout for structure
+- Consistent spacing (8px base unit system)
+- Clear hierarchy and navigation
+- Data-driven content presentation
+
+## Layout & Composition
+
+**Container System:**
+```css
+/* Desktop */
+.container-xl: 1200px max-width
+.container-lg: 1000px max-width
+.container-md: 800px max-width
+
+/* Spacing System (8px base) */
+--space-xs: 8px;
+--space-sm: 16px;
+--space-md: 24px;
+--space-lg: 32px;
+--space-xl: 48px;
+--space-xxl: 64px;
+```
+
+**Grid Principles:**
+- **12-column grid** for flexibility
+- **Asymmetric layouts** for visual interest
+- **60/40 or 70/30** splitting for balance
+- **Card-based** components for information
+
+## UI Components
+
+**Buttons:**
+```css
+/* Primary CTA */
+.btn-primary {
+    background: var(--primary-green);
+    color: var(--pure-white);
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Secondary CTA */
+.btn-secondary {
+    background: transparent;
+    color: var(--primary-green);
+    border: 2px solid var(--primary-green);
+    padding: 14px 30px;
+    border-radius: 8px;
+}
+
+/* Accent CTA */
+.btn-accent {
+    background: var(--golden-accent);
+    color: var(--charcoal-gray);
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+```
+
+**Cards:**
+```css
+.card {
+    background: var(--pure-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(44, 85, 48, 0.08);
+    padding: var(--space-lg);
+    border: 1px solid var(--light-gray);
+}
+```
+
+## Image Guidelines
+
+**Photo Style:**
+- **Natural lighting** always preferred
+- **Authentic people** - no over-styled models
+- **Minimal retouching** - preserves natural skin texture
+- **Neutral backgrounds** - focus on the person
+- **Before/after images** must be same angle and lighting
+
+**Product Imagery:**
+- **Clean white backgrounds** for product images
+- **45-degree angles** for dimensional depth
+- **Consistent shadows** for cohesion
+- **Macro details** of textures and ingredients
+
+## Iconography
+
+**Style:**
+- **Line-based icons** (2px stroke weight)
+- **Rounded endpoints** for softness
+- **24x24px grid** for consistency
+- **Minimal color** - primarily black or primary green
+
+**ScalpCare Expert Icons:**
+- Leaf motifs for natural ingredients
+- Microscope for scientific approach
+- Clock for treatment duration
+- Checkmarks for results
+- Profile silhouettes for before/after
+
+## Animation & Micro-interactions
+
+**Transition Principles:**
+```css
+/* Standard easing */
+transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+/* Hover effects */
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(44, 85, 48, 0.12);
+}
+
+/* Button interactions */
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(44, 85, 48, 0.2);
+}
+```
+
+## Responsive Breakpoints
+
+```css
+/* Mobile First Approach */
+--mobile: 320px;
+--tablet: 768px;
+--desktop: 1024px;
+--large: 1200px;
+--xlarge: 1440px;
+```
+
+## Brand Voice in Design
+
+**ScalpCare Expert Design Tone:**
+- **Professional yet accessible** - clean lines, readable fonts
+- **Natural and authentic** - organic shapes, real photography
+- **Safe and reliable** - consistent spacing, familiar patterns
+- **Premium but not arrogant** - subtle luxury, not ostentatious
+
+## Logo Guidelines
+
+**ScalpCare Expert Logo Principles:**
+- **Wordmark-based** with clean typography
+- **Subtle leaf/growth element** integrated into letters
+- **Primary version** in dark green on light backgrounds
+- **Secondary version** in white on dark backgrounds
+- **Minimum size:** 120px width for digital, 25mm for print
+
+**Logo Variations:**
+```css
+/* Horizontal Logo */
+.logo-horizontal: used in headers and footers
+
+/* Stacked Logo */
+.logo-stacked: used when width is constrained
+
+/* Icon Version */
+.logo-icon: only for social media profile pictures and favicons
+```
+
+## Specialized Components
+
+**Consultation Cards:**
+```css
+.consultation-card {
+    background: linear-gradient(135deg, var(--accent-cream) 0%, var(--pure-white) 100%);
+    border-left: 4px solid var(--primary-green);
+    padding: var(--space-lg);
+    border-radius: 12px;
+}
+```
+
+**Testimonial Design:**
+```css
+.testimonial {
+    background: var(--warm-beige);
+    border-radius: 16px;
+    padding: var(--space-xl);
+    position: relative;
+    font-style: italic;
+}
+
+.testimonial::before {
+    content: '"';
+    font-size: 4rem;
+    color: var(--soft-green);
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+```
+
+**Price Cards:**
+```css
+.price-card {
+    background: var(--pure-white);
+    border: 2px solid var(--light-gray);
+    border-radius: 16px;
+    padding: var(--space-xl);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.price-card.featured {
+    border-color: var(--golden-accent);
+    transform: scale(1.05);
+    box-shadow: 0 12px 40px rgba(212, 165, 116, 0.15);
+}
+```
+
+This comprehensive styling guide ensures consistent visual identity across all ScalpCare Expert's digital and physical touchpoints, while communicating professionalism, naturalness, and trustworthiness.
