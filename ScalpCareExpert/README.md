@@ -45,16 +45,35 @@ npm run build
 
 ## Vercel Deployment
 
+### Quick Deploy
 1. **Connect to Vercel**:
    - Go to [vercel.com](https://vercel.com)
-   - Import your GitHub repository
+   - Click "New Project"
+   - Import your GitHub repository: `https://github.com/ddandanell/ScalpCare`
    - Vercel will automatically detect the configuration
 
-2. **Environment Variables** (if needed):
-   - Add any required environment variables in Vercel dashboard
+2. **Build Settings** (should auto-detect):
+   - **Framework Preset**: Other
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+   - **Install Command**: `npm install`
 
 3. **Deploy**:
-   - Vercel will automatically build and deploy on every push to main branch
+   - Click "Deploy"
+   - Vercel will build and deploy automatically
+   - Your site will be available at `https://your-project-name.vercel.app`
+
+### Manual Configuration
+If auto-detection fails, manually set:
+- **Root Directory**: Leave empty (uses root)
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist`
+- **Install Command**: `npm install`
+
+### Troubleshooting
+- **404 Error**: Make sure the `vercel.json` file is in the root directory
+- **Build Fails**: Check that all dependencies are in `package.json`
+- **API Not Working**: Verify the `api/` directory contains the serverless functions
 
 ## Project Structure
 
