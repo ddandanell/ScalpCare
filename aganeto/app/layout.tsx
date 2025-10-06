@@ -23,6 +23,8 @@ const mono = IBM_Plex_Mono({
   variable: "--font-mono",
 });
 
+
+
 export const metadata: Metadata = {
   title: "DCPH Digital - Build Bigger, Build Faster, Pay 60% Less",
   description: "Stop paying European agencies $60,000+ for simple MVPs. Get Indonesian talent with European leadership. 25 years experience, 500+ projects delivered, 3x faster delivery at 40% of local cost.",
